@@ -1,17 +1,13 @@
 import React from 'react';
-import { View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Home from './src/pages/Home';
-import Stack from './src/pages/Stack';
+import Router from './src/MainContainer';
 
 const App = () => {
 
   return (
-
     <NavigationContainer>
-      <Stack />
+      <Router/>
     </NavigationContainer>
   );
 };
