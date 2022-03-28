@@ -5,6 +5,7 @@ import Home from './screen/HomePage';
 import Detail from './screen/DetailPage';
 import Confirm from './screen/ConfirmPage';
 import Order from './screen/OrderListPage';
+import PembatalanScreen from './screen/CancelPage';
 
 const Stack = createNativeStackNavigator();
 
@@ -15,6 +16,7 @@ const ScreenStack = () => {
             <Stack.Screen name="Detail" component={Detail} />
             <Stack.Screen name="Confirm" component={Confirm} />
             <Stack.Screen name="Order" component={Order} />
+            <Stack.Screen name="CancelPage" component={PembatalanScreen}/>
         </Stack.Navigator>
     );
 };
